@@ -20,7 +20,7 @@ class GridAI:
         for i in range(10):
             row = []
             for j in range(10):
-                button = tk.Button(self.root, width=2, height=1, bg='white', command=lambda r=i, c=j: self.toggle_color(r, c))
+                button = tk.Button(self.root, width=4, height=2, bg='white', command=lambda r=i, c=j: self.toggle_color(r, c))
                 button.grid(row=i, column=j)
                 row.append(button)
             self.grid_buttons.append(row)
